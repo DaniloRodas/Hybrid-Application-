@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Blank App</title>
+    </head>
+    <body>
+		<div class="header">
+			<h1>Aplicacion de Notas</h1>
+		</div>		
+		
+		
+		
+		
+		<div class="notes-list-container">
+			<div class="notes-list" id="notes-list">
+				<div class="note-item">Comprar Pan</div>	
+				<div class="note-item">Revision Coche</div>	
+			</div>	
+			<button class="anadir" id="anadir">Agregar</button>
+		</div>	
+		
+		<div class="note-editor" id="note-editor">
+			<input class="titulo" type="text" name="titulo" id="titulo" placeholder="Titulo" required />
+			<br/>
+			<textarea class="comentario" name="comentario" id="comentario" placeholder="comentario"></textarea>
+			<br/>
+			<button class="salvar" id="salvar">Salvar</button>
+		</div>
+		<footer class="footer">
+			<h4>Desarrollado RRD 2016</h4>
+		</footer>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/fastclick.js"></script>
+        <script type="text/javascript" src="js/notes.js"></script>
+    </body>
+</html>
