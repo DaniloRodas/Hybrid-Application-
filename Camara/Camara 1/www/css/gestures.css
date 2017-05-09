@@ -1,0 +1,104 @@
+body{
+  background-color: #8eadc5;
+}
+
+body.claro{
+  background-color: #8de1bd;
+}
+
+body.oscuro{
+  background-color: #577a76;
+}
+
+button{
+  background-color: #7fba67;
+  color: #ffffff;
+  border: none;
+  width: 100%;
+  padding: 30px;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+#zona-gestos{
+  width:100%;
+  background-color: #7fba67;
+  margin-top: 10px;
+  min-height: 300px;
+  display: block;
+}
+
+#info{
+  color: #ffffff;
+  font-size: 2em;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+#zona-gestos.doubletap{
+    -webkit-animation: pulsacion 1.5s 1;
+}
+
+#zona-gestos.press{
+    -webkit-animation: presion 1.5s 1;
+}
+
+#zona-gestos.swipe-derecha{
+    -webkit-animation: swipe-derecha 3s 1;
+}
+
+#zona-gestos.swipe-izquierda{
+    -webkit-animation: swipe-izquierda 3s 1;
+}
+
+#zona-gestos.rotate{
+    -webkit-animation: rotate 3s 1;
+}
+
+@-webkit-keyframes pulsacion {
+  0%, 100% {
+    background-color: #7fba67;
+  }
+  50% {
+    background-color: #8de1bd;
+  }
+}
+
+@-webkit-keyframes presion {
+  0%, 100% {
+    background-color: #7fba67;
+  }
+  50% {
+    background-color: #577a76;
+  }
+}
+
+
+@-webkit-keyframes swipe-derecha {
+  0%, 100% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-left: 100%;
+  }
+}
+
+@-webkit-keyframes swipe-izquierda {
+  0%, 100% {
+    width: 100%;
+  }
+  50% {
+    width: 0%;
+  }
+}
+
+@-webkit-keyframes rotate { 
+  100% { 
+    -webkit-transform: rotate(360deg);
+  } 
+}
+@-webkit-keyframes rotate-izquierda { 
+  100% { 
+    -webkit-transform: rotate(-360deg);
+  } 
+}
